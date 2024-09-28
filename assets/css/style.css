@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.tabs {
+  margin: 50px;
+  position: relative;
+}
+.tabs__btns {
+  display: flex;
+  gap: 55px;
+}
+.tab__btn {
+  cursor: pointer;
+  background-color: rgba(0, 255, 4, 0.331);
+  padding: 10px;
+  width: 130px;
+  text-align: center;
+  border-radius: 10px;
+}
+.tab__btn.active {
+  background-color: rgb(6, 255, 35);
+}
+
+.tab__text {
+  position: absolute;
+  top: 100%;
+  padding: 15px;
+  background-color: rgb(118, 158, 118);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2.5px solid rgb(0, 255, 4);
+  max-width: 500px;
+  visibility: hidden;
+}
+.tab__text.active{
+  visibility: visible;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
